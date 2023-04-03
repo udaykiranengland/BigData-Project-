@@ -1,0 +1,27 @@
+Project Title: Data Ingestion and Reporting Pipeline for Web Application.
+
+Objective: To import data from a MySQL database and to ingest CSV files into Hadoop and preprocess the data in Hive and then generating reporting tables for a web Application.
+
+Data Sources:  A MySQL database with two tables "user" and "activitylog" 
+
+Periodic CSV dumps from another system containing information about train uploads made by users.
+
+Deliverables:  
+
+A shell script is written to import data from the MySQL tables into Hive.
+
+A shell script to ingest CSV  lines from the original  train system into HDFS and into Hive.
+
+A shell script to execute a Hive query to  induce the reporting tables.
+
+All scripts and attestation should be pushed to this GitHub depository.  
+
+Reporting Tables:
+
+"user_report" contains periodic operations and statistics for each user, including total updates, inserts, and deletes, last exertion type, whether the user is active, and upload count.
+
+"user_total" contains the total number of users using the source periodically.
+
+This project includes scripts to automate the ingestion of data from the MySQL database and CSV files to Hadoop and processing the data in Hive, and induce reporting tables for a web  operation. The"user_report" table contains added up operation and statistics for each user, while the"user_total" table tracks the total number of users using the website at certain times. These reporting tables can be queried  fluently through Hue to  induce reports for the  customer. 
+
+All scripts and attestation are available on GitHub for easy access and conservation. 
